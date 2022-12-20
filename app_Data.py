@@ -38,8 +38,9 @@ def run_data_app():
 
         st.text('체력 최대')
         st.text('해피너스,무한다이노 거다이맥스폼')
-        st.image("https://www.serebii.net/xy/pokemon/242.png")
-        st.image("https://www.serebii.net/swordshield/pokemon/890-e.png")
+        col1,col2 = st.columns(2)
+        col1.image("https://www.serebii.net/xy/pokemon/242.png",use_column_width=True)
+        col2.image("https://www.serebii.net/swordshield/pokemon/890-e.png",use_column_width=True)
         st.dataframe(df_max)
         st.text('체력 최소')
         st.text('껍질몬')
@@ -56,8 +57,9 @@ def run_data_app():
         st.dataframe(df_max)
         st.text('공격 최소')
         st.text('럭키,핑복')
-        st.image("https://www.serebii.net/xy/pokemon/113.png")
-        st.image("https://www.serebii.net/sunmoon/pokemon/440.png")
+        col1,col2 = st.columns(2)
+        col1.image("https://www.serebii.net/xy/pokemon/113.png",use_column_width=True)
+        col2.image("https://www.serebii.net/sunmoon/pokemon/440.png",use_column_width=True)
         st.dataframe(df_min)
     
     elif selected_column == "방어":
@@ -70,8 +72,9 @@ def run_data_app():
         st.dataframe(df_max)
         st.text('방어 최소')
         st.text('럭키,핑복')
-        st.image("https://www.serebii.net/xy/pokemon/113.png")
-        st.image("https://www.serebii.net/sunmoon/pokemon/440.png")
+        col1,col2 = st.columns(2)
+        col1.image("https://www.serebii.net/xy/pokemon/113.png",use_column_width=True)
+        col2.image("https://www.serebii.net/sunmoon/pokemon/440.png",use_column_width=True)
         st.dataframe(df_min)
 
     elif selected_column == "특수공격":
@@ -84,10 +87,11 @@ def run_data_app():
         st.dataframe(df_max)
         st.text('특수공격 최소')
         st.text('모래두지 알로라폼,단단지,빈티나,코지지')
-        st.image("https://www.serebii.net/sunmoon/pokemon/027-a.png")
-        st.image("https://www.serebii.net/swordshield/pokemon/213.png")
-        st.image("https://www.serebii.net/swordshield/pokemon/349.png")
-        st.image("https://www.serebii.net/swordshield/pokemon/438.png")
+        col1,col2,col3,col4 = st.columns(4)
+        col1.image("https://www.serebii.net/sunmoon/pokemon/027-a.png",use_column_width=True)
+        col2.image("https://www.serebii.net/swordshield/pokemon/213.png",use_column_width=True)
+        col3.image("https://www.serebii.net/swordshield/pokemon/349.png",use_column_width=True)
+        col4.image("https://www.serebii.net/swordshield/pokemon/438.png",use_column_width=True)
         st.dataframe(df_min)
 
     elif selected_column == "특수방어":
@@ -100,13 +104,14 @@ def run_data_app():
         st.dataframe(df_max)
         st.text('특수방어 최소')
         st.text('캐터피,뿔충이,잉어킹,푸푸린,샤프니아,테오키스 어택폼,돌헨진')
-        st.image("https://www.serebii.net/xy/pokemon/010.png")
-        st.image("https://www.serebii.net/xy/pokemon/013.png")
-        st.image("https://www.serebii.net/xy/pokemon/129.png")
-        st.image("https://www.serebii.net/xy/pokemon/174.png")
-        st.image("https://www.serebii.net/xy/pokemon/318.png")
-        st.image("https://www.serebii.net/sunmoon/pokemon/386-a.png")
-        st.image("https://www.serebii.net/swordshield/pokemon/874.png")
+        col1,col2,col3,col4,col5,col6,col7=st.columns(7)
+        col1.image("https://www.serebii.net/xy/pokemon/010.png",use_column_width=True)
+        col2.image("https://www.serebii.net/xy/pokemon/013.png",use_column_width=True)
+        col3.image("https://www.serebii.net/xy/pokemon/129.png",use_column_width=True)
+        col4.image("https://www.serebii.net/xy/pokemon/174.png",use_column_width=True)
+        col5.image("https://www.serebii.net/xy/pokemon/318.png",use_column_width=True)
+        col6.image("https://www.serebii.net/sunmoon/pokemon/386-a.png",use_column_width=True)
+        col7.image("https://www.serebii.net/swordshield/pokemon/874.png",use_column_width=True)
         st.dataframe(df_min)
 
     elif selected_column == "속도":
@@ -119,9 +124,10 @@ def run_data_app():
         st.dataframe(df_max)
         st.text('속도 최소')
         st.text('단단지,먹고자,해무기')
-        st.image("https://www.serebii.net/swordshield/pokemon/213.png")
-        st.image("https://www.serebii.net/swordshield/pokemon/446.png")
-        st.image("https://www.serebii.net/sunmoon/pokemon/771.png")
+        col1,col2,col3=st.columns(3)
+        col1.image("https://www.serebii.net/swordshield/pokemon/213.png",use_column_width=True)
+        col2.image("https://www.serebii.net/swordshield/pokemon/446.png",use_column_width=True)
+        col3.image("https://www.serebii.net/sunmoon/pokemon/771.png",use_column_width=True)
         st.dataframe(df_min)
 
     
