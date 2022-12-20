@@ -17,7 +17,7 @@ chart에서 plotly 차트를 활용하여 컬럼별 기준으로 히스토그램
 
 ![image](https://user-images.githubusercontent.com/120348521/208610934-c8985851-b045-4139-895c-b5a82c4188db.png)
 
-![image](https://user-images.githubusercontent.com/120348521/208611016-a8651f74-b658-440c-9ba7-cf480056baca.png)
+![image](https://user-images.githubusercontent.com/120348521/208620599-1e7169a5-4a91-4c5b-92d4-b3b622461bc8.png)
 
 ![image](https://user-images.githubusercontent.com/120348521/208611056-8134cf24-a389-4690-8eb6-56879d09a0f8.png)
 
