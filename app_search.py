@@ -19,8 +19,8 @@ def run_search_app():
     df_poke=df[df['name'].str.contains(poke_word,case=False)]
 
     def p_s() : 
-            
-            for dex in df_poke.index.unique():
+            du=df_poke.index.unique()
+            for dex in du:
                 print(dex)   
                 if dex <10:
                         st.text(df_poke['name'][dex])
