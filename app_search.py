@@ -19,9 +19,9 @@ def run_search_app():
     df_poke=df[df['name'].str.contains(poke_word,case=False)]
 
     def p_s() : 
-            du=df_poke.index.unique()
+            
             for dex in du:
-                print(dex)   
+                du=df_poke.index.unique()
                 if dex <10:
                         st.text(df_poke['name'][dex])
                         st.image("https://data1.pokemonkorea.co.kr/newdata/pokedex/full/000{}01.png".format(dex))
@@ -29,19 +29,19 @@ def run_search_app():
                 
                 elif dex>10 and dex<100:
                         
-                        
+                        st.text(df_poke['name'][dex])
                         st.image("https://data1.pokemonkorea.co.kr/newdata/pokedex/full/00{}01.png".format(dex))
                         
                 
 
                 elif dex>100 and dex<1000:
                         
-                        
+                        st.text(df_poke['name'][dex])
                         st.image("https://data1.pokemonkorea.co.kr/newdata/pokedex/full/0{}01.png".format(dex))
                         
                         
                 else:
-                    
+                        st.text(df_poke['name'][dex])
                         st.image("https://data1.pokemonkorea.co.kr/newdata/pokedex/full/{}01.png".format(dex))
                         
 
