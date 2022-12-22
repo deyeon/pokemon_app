@@ -20,7 +20,7 @@ def run_search_app():
 
     def p_s() : 
             
-            for dex in df_poke.index:
+            for dex in df_poke.index.unique:
                 print(dex)   
                 if dex <10:
                         st.text(df_poke['name'][dex])
