@@ -19,46 +19,34 @@ def run_search_app():
     df_poke=df[df['name'].str.contains(poke_word,case=False)]
 
     def p_s() : 
-            x =[]
-            n =[]
-            print(df_poke.index)
+
             for dex in df_poke.index:
-                print(dex)
+                
                 if dex <10:
-                    if dex not in x:
                         st.image("https://data1.pokemonkorea.co.kr/newdata/pokedex/full/000{}01.png".format(dex))
-                        x.append(dex)
-                    elif dex not in n:
-                        for i in range(1,len(n)+1):
-                            print("https://data1.pokemonkorea.co.kr/newdata/pokedex/full/000{}0{}.png".format(dex,i))
-                            st.image("https://data1.pokemonkorea.co.kr/newdata/pokedex/full/000{}0{}.png".format(dex,i))
-                            n.append(dex)
+                        
+                
+                elif dex>10 and dex<100:
+                        
+                        
+                        st.image("https://data1.pokemonkorea.co.kr/newdata/pokedex/full/00{}01.png".format(dex))
+                        
+                
+
                         
 
-                # elif dex>100 and dex<1000:
-                #     if dex not in x:
+                elif dex>100 and dex<1000:
                         
                         
-                #         st.image("https://data1.pokemonkorea.co.kr/newdata/pokedex/full/0{}01.png".format(dex))
-                #         x.append(dex)
-                #     elif dex not in n:
-                #         for i in range(2,len(df_poke)+1):
-                #             print("https://data1.pokemonkorea.co.kr/newdata/pokedex/full/0{}0{}.png".format(dex,i))
-                #             st.image("https://data1.pokemonkorea.co.kr/newdata/pokedex/full/0{}0{}.png".format(dex,i))
-                #             n.append(dex)
+                        st.image("https://data1.pokemonkorea.co.kr/newdata/pokedex/full/0{}01.png".format(dex))
                         
-                # else:
-                #     if dex not in x:
                         
-                #         st.image("https://data1.pokemonkorea.co.kr/newdata/pokedex/full/{}01.png".format(dex))
-                #         x.append(dex)
+                else:
+                    
+                        st.image("https://data1.pokemonkorea.co.kr/newdata/pokedex/full/{}01.png".format(dex))
+                        
 
-                #     elif dex not in n:
-                #         for i in range(2,len(df_poke)+1):
-                #             print("https://data1.pokemonkorea.co.kr/newdata/pokedex/full/{}0{}.png".format(dex,i))
-                #             st.image("https://data1.pokemonkorea.co.kr/newdata/pokedex/full/{}0{}.png".format(dex,i))
-                #             n.append(dex)
-
+                    
     
     if len(poke_word)!= 0:
         st.dataframe(df_poke)
