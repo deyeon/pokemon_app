@@ -19,9 +19,9 @@ def run_search_app():
     df_poke=df[df['name'].str.contains(poke_word,case=False)]
 
     def p_s() : 
-
+            
             for dex in df_poke.index:
-                
+                print(dex)   
                 if dex <10:
                         st.image("https://data1.pokemonkorea.co.kr/newdata/pokedex/full/000{}01.png".format(dex))
                         
