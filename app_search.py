@@ -19,38 +19,71 @@ def run_search_app():
     df_poke=df[df['name'].str.contains(poke_word,case=False)]
 
     def p_s() : 
-            
+            du=df_poke.index.unique()
             for dex in du:
-                du=df_poke.index.unique()
+                
                 if dex <10:
-                        st.text(df_poke['name'][dex])
-                        st.image("https://data1.pokemonkorea.co.kr/newdata/pokedex/full/000{}01.png".format(dex))
+                        d_s=df_poke['name'][dex]
+                        if isinstance(d_s, pd.Series):
+                                d_ss1=d_s
+                                for i in range(0,len(d_ss1)):
+                                        st.text(d_ss1.values[i])
+                                        st.image("https://data1.pokemonkorea.co.kr/newdata/pokedex/full/000{}0{}.png".format(d_ss1.index[0],i+1))
+                        else:
+                                st.text(d_s)
+                                st.image("https://data1.pokemonkorea.co.kr/newdata/pokedex/full/000{}01.png".format(dex))
                         
                 
-                elif dex>10 and dex<100:
+                elif dex>=10 and dex<100:
+                        d_s=df_poke['name'][dex]
                         
-                        st.text(df_poke['name'][dex])
-                        st.image("https://data1.pokemonkorea.co.kr/newdata/pokedex/full/00{}01.png".format(dex))
+                        if isinstance(d_s, pd.Series):
+                                d_ss2=d_s
+                                for i in range(0,len(d_ss2)):
+                                        st.text(d_ss2.values[i])
+                                        st.image("https://data1.pokemonkorea.co.kr/newdata/pokedex/full/00{}0{}.png".format(d_ss2.index[0],i+1))
+                        else:
+                                st.text(d_s)
+                                st.image("https://data1.pokemonkorea.co.kr/newdata/pokedex/full/00{}01.png".format(dex))
                         
                 
 
-                elif dex>100 and dex<1000:
+                elif dex>=100 and dex<1000:
+                        d_s=df_poke['name'][dex]
                         
-                        st.text(df_poke['name'][dex])
-                        st.image("https://data1.pokemonkorea.co.kr/newdata/pokedex/full/0{}01.png".format(dex))
+                        if isinstance(d_s, pd.Series):
+                                d_ss3=d_s
+                                for i in range(0,len(d_ss3)):
+                                        st.text(d_ss3.values[i])
+                                        st.image("https://data1.pokemonkorea.co.kr/newdata/pokedex/full/0{}0{}.png".format(d_ss3.index[0],i+1))
+                        else:
+                                st.text(d_s)
+                                st.image("https://data1.pokemonkorea.co.kr/newdata/pokedex/full/0{}01.png".format(dex))
                         
                         
                 else:
-                        st.text(df_poke['name'][dex])
-                        st.image("https://data1.pokemonkorea.co.kr/newdata/pokedex/full/{}01.png".format(dex))
+                        d_s=df_poke['name'][dex]
+                        
+                        if isinstance(d_s, pd.Series):
+                                d_ss4=d_s
+                                for i in range(0,len(d_ss4)):
+                                        st.text(d_ss4.values[i])
+                                        st.image("https://data1.pokemonkorea.co.kr/newdata/pokedex/full/{}0{}.png".format(d_ss4.index[0],i+1))
+                        else:
+                                st.text(d_s)
+                                st.image("https://data1.pokemonkorea.co.kr/newdata/pokedex/full/{}01.png".format(dex))
+                        
                         
 
                     
     
     if len(poke_word)!= 0:
         st.dataframe(df_poke)
-        print(p_s())
-        p_s()
+        
+        s_s = st.checkbox("이미지 표시")
+        if s_s:
+                p_s()
+
     else:
         st.info("포켓몬을 검색해보세요")
     
