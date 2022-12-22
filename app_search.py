@@ -33,8 +33,6 @@ def run_search_app():
                         
                 
 
-                        
-
                 elif dex>100 and dex<1000:
                         
                         
