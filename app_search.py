@@ -23,6 +23,7 @@ def run_search_app():
             for dex in df_poke.index:
                 print(dex)   
                 if dex <10:
+                        st.text(df_poke['name'][dex])
                         st.image("https://data1.pokemonkorea.co.kr/newdata/pokedex/full/000{}01.png".format(dex))
                         
                 
@@ -48,6 +49,7 @@ def run_search_app():
     
     if len(poke_word)!= 0:
         st.dataframe(df_poke)
+        print(p_s())
         p_s()
     else:
         st.info("포켓몬을 검색해보세요")
