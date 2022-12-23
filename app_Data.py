@@ -130,6 +130,8 @@ def run_data_app():
         col3.image("https://data1.pokemonkorea.co.kr/newdata/pokedex/full/077101.png",use_column_width=True)
         st.dataframe(df_min)
 
+
+
     
     
 
