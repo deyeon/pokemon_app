@@ -63,6 +63,6 @@ chart에서 plotly 차트를 활용하여 컬럼별 기준으로 히스토그램
 
 
 
-#데이터 레퍼런스
+# 데이터 레퍼런스
 
 https://www.kaggle.com/datasets/mariotormo/complete-pokemon-dataset-updated-090420?select=pokedex_%28Update_05.20%29.csv
