@@ -12,7 +12,7 @@ chart에서 plotly 차트를 활용하여 컬럼별 기준으로 히스토그램
 
 # 진행과정
 
-##  1.jupyter notebook에서 진행한 내용
+## 1. jupyter notebook에서 진행한 내용
 
   - csv형식의 데이터를 jupyter notebook으로 불러 작업하였습니다.
   - 데이터를 가공하는 과정에서 기존 인덱스 번호를 포켓몬 번호 데이터에 맞게 인덱스를 수정하여 작업하였습니다.
