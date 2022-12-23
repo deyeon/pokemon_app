@@ -38,6 +38,7 @@
 
 
 ## 문제해결
+  - 웹대시보드에서 차트 부분에 영어로된 컬럼의 기준을 선택할때 한글로 선택할 수 있게 하였습니다. 
   - streamlit에서 이미지를 표시할때 나린히 생성되지 않는 문제를 해결하기 위해 st.column 기능으로 이미지를 나린히 생성하였습니다.
   - 판다스 시리즈 데이터를 구분하기 위해 isinstance함수를 사용해 판다스 시리즈 데이터를 구분하였고 판다스 시리즈 데이터에 인덱싱하기
     위해 value[]문으로 인덱싱하였습니다.
@@ -52,22 +53,6 @@
 ![image](https://user-images.githubusercontent.com/120348521/208620599-1e7169a5-4a91-4c5b-92d4-b3b622461bc8.png)
 
 ![image](https://user-images.githubusercontent.com/120348521/209062948-84aaffce-06f8-48bb-8b80-dd2cafb91458.png)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 # 데이터 레퍼런스
