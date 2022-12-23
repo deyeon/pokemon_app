@@ -65,7 +65,7 @@ def run_chart_app():
 
     if len(selected_list) >= 2:
             df_corr=df[selected_list].corr()
-            fig7 = plt.figure()
+            fig7 = plt.figure(figsize=(12,8))
             sb.heatmap(data=df_corr,annot=True,fmt='.2f',cmap='coolwarm',
             vmin = -1,vmax=1,linewidths=0.5)
             st.pyplot(fig7)
